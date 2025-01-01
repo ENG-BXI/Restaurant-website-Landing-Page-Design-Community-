@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --main-color: #EA6D27
+}
+
+#root #hero {
+    background-color: white;
+    width: 100vw;
+
+}
+
+#root #hero #curve-line-background {
+    position: absolute;
+    top: 0;
+    left: -40px;
+
+}
+
+#root #hero #header {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-bottom: 150px;
+    /* position: sticky;
+    top: 0; */
+}
+
+#root #hero #header #logo {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    cursor: pointer;
+    z-index: 2;
+    margin-left: 50px;
+}
+
+#root #hero #header #logo img {
+    transform: translate(-10px, 5px);
+    -webkit-transform: translate(-10px, 5px);
+    -moz-transform: translate(-10px, 5px);
+    -ms-transform: translate(-10px, 5px);
+    -o-transform: translate(-10px, 5px);
+}
+
+#root #hero #header #logo h2 {
+    font-size: 27px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+
+}
+
+#root #hero #header nav ul {
+    font-family: "inter";
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 434px;
+}
+
+#root #hero #header nav ul li {
+    z-index: 2;
+    cursor: pointer;
+}
+
+#root #hero #header nav ul li:hover {
+    color: var(--main-color);
+}
+
+button,
+#book-table {
+    font-size: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 10px 20px 0 rgb(212, 212, 212);
+    cursor: pointer;
+    border: none;
+    padding: 16px 30px;
+    font-size: 16px;
+}
+
+#book-table {
+    background-color: var(--main-color);
+    color: white;
+    padding: 16px 30px;
+}
+
+#root #hero #content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#root #hero #content>#circle-vector-word {
+    position: absolute;
+    top: 250px;
+    left: 55px;
+}
+
+#root #hero #content #title-and-description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+#root #hero #content #title-and-description #title {
+    font-size: 70px;
+    font-family: "David Libre";
+    font-weight: 700;
+    width: 510px;
+    margin-top: 140px;
+
+}
+
+#root #hero #content #title-and-description #description {
+    width: 360px;
+    line-height: 1.7;
+    font-size: 15px;
+    color: gray;
+    font-family: "inter";
+}
+
+#root #hero #content #title-and-description #button-in-hero {
+    display: flex;
+    width: 270px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#root #hero #content #title-and-description #button-in-hero #menu {
+    background-color: black;
+    color: white;
+}
+
+#root #hero #content #title-and-description #icon-social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+}
+
+#root #hero #content #title-and-description #icon-social-media div {
+    width: 35px;
+    height: 35px;
+    border: solid 1px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.7;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#root #hero #content #img-in-hero {
+    position: relative;
+
+}
+
+#root #hero #content #img-in-hero img {
+    position: absolute;
+}
+
+#root #hero #content #img-in-hero #mask-group {
+    z-index: 2;
+    position: relative;
+}
+
+#root #hero #content #img-in-hero #dish {
+
+    left: -210px;
+    bottom: 0;
+    z-index: 3;
+}
+
+#root #hero #content #img-in-hero #top-left {
+    top: -80px;
+    left: -180px;
+
+    opacity: 0.25;
+}
+
+#root #hero #content #img-in-hero #top-right {
+    top: -100px;
+    right: -150px;
+    z-index: 1;
+}
+
+#root #hero #content #img-in-hero #bottom-right {
+    bottom: 0;
+    right: -150px;
+}
+
+/* end hero */
